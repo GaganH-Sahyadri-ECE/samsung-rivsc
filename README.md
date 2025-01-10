@@ -12,7 +12,14 @@ This RISC-V Internship using **VSDSquadron Mini** is based on the RISC-V archite
 # Task-1:
 
 ## C-Based Lab Screenshots
-![C-Based Lab Screenshot](./task1-c-lab.png)
+![C-Based Lab Screenshot 1](./c-lab-1.png)
+![C-Based Lab Screenshot 2](./c-lab-2.png)
+![C-Based Lab Screenshot 3](./c-lab-3.png)
+
+## RISC-V Based Lab Screenshots
+
+![RISC-V Based Lab Screenshot](./riscv-lab.png)
+
 
 ## RISC-V Based Lab Screenshots
 ![RISC-V Based Lab Screenshot](./task1-riscv-lab.png)
