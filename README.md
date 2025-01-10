@@ -32,4 +32,15 @@ Here are the screenshots for the RISC-V based lab:
 ![RISC-V Based Lab Screenshot 3](./TASK-1/riscv-lab-3.png)  
 
 </details>
+# Task-2
+
+<details>
+<summary>SKIPE Simulation</summary>
+
+Here are the screenshots for the SKIPE Simulation:
+
+![SKIPE Simulation Screenshot 1](./task/skipe-sim-1.png)  
+![SKIPE Simulation Screenshot 2](./task/skipe-sim-2.png)  
+
+</details>
 
