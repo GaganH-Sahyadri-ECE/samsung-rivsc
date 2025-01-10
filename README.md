@@ -39,8 +39,8 @@ Here are the screenshots for the RISC-V based lab:
 
 Here are the screenshots for the SKIPE Simulation:
 
-![SKIPE Simulation Screenshot 1](./task/skipe-sim-1.png)  
-![SKIPE Simulation Screenshot 2](./task/skipe-sim-2.png)  
+![SKIPE Simulation Screenshot 1](./TASK-2/skipe-sim-1.png)  
+![SKIPE Simulation Screenshot 2](./TASK-2/skipe-sim-2.png)  
 
 </details>
 
