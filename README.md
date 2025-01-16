@@ -128,6 +128,12 @@ The following table provides the 15 unique instructions, their types, and their 
 In Task 3 of the RISC-V Internship program, the focus was on understanding and decoding various RISC-V instruction formats (R, I, S, B, U, and J). By analyzing the `riscv-objdump` output, we identified 15 unique instructions and provided their corresponding 32-bit binary representations. This task enhanced our understanding of RISC-V instruction formats and how they are encoded in machine language, helping in building a strong foundation for low-level programming and system design.
 
 ---
+Here are the screenshots for the RISC-V Instruction Decoding:
+
+![RISC-V Instruction Decoding](image1.png)
+![RISC-V Decoding Process](image2.png)
+![Instruction Types Overview](image3.png)
+---
 
 ## How to Run
 
