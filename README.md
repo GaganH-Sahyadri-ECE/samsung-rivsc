@@ -122,6 +122,38 @@ The following table provides the 15 unique instructions, their types, and their 
 | SLT              | R-Type     | `0000000 00010 00011 010 00100 0110011` | Sets x4 to 1 if x2 < x3.                         |
 
 </details>
+---
+## Conclusion
+
+In Task 3 of the RISC-V Internship program, the focus was on understanding and decoding various RISC-V instruction formats (R, I, S, B, U, and J). By analyzing the `riscv-objdump` output, we identified 15 unique instructions and provided their corresponding 32-bit binary representations. This task enhanced our understanding of RISC-V instruction formats and how they are encoded in machine language, helping in building a strong foundation for low-level programming and system design.
+
+---
+
+## How to Run
+
+### Steps to Analyze and Decode Instructions
+
+1. **Setup RISC-V Toolchain**
+   - Install RISC-V GCC and associated tools:
+     ```bash
+     sudo apt update
+     sudo apt install gcc-riscv64-linux-gnu gdb-multiarch
+     ```
+
+2. **Generate `riscv-objdump` Output**
+   - Compile application code to create an ELF file:
+     ```bash
+     riscv64-unknown-elf-gcc -o application.elf application.c
+     ```
+   - Generate the assembly dump:
+     ```bash
+     riscv64-unknown-elf-objdump -d application.elf > objdump_output.txt
+     ```
+
+3. **Decode Instructions**
+   - Use the RISC-V manual to decode instructions from the dump.
+
+---
 
 
 
