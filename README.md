@@ -121,8 +121,8 @@ The following table provides the 15 unique instructions, their types, and their 
 | XOR              | R-Type     | `0000000 00010 00011 100 00100 0110011` | Logical XOR of x2 and x3, result in x4.          |
 | SLT              | R-Type     | `0000000 00010 00011 010 00100 0110011` | Sets x4 to 1 if x2 < x3.                         |
 
-</details>
 ---
+
 ## Conclusion
 
 In Task 3 of the RISC-V Internship program, the focus was on understanding and decoding various RISC-V instruction formats (R, I, S, B, U, and J). By analyzing the `riscv-objdump` output, we identified 15 unique instructions and provided their corresponding 32-bit binary representations. This task enhanced our understanding of RISC-V instruction formats and how they are encoded in machine language, helping in building a strong foundation for low-level programming and system design.
@@ -154,6 +154,12 @@ In Task 3 of the RISC-V Internship program, the focus was on understanding and d
    - Use the RISC-V manual to decode instructions from the dump.
 
 ---
+
+
+</details>
+
+
+
 
 
 
