@@ -122,7 +122,6 @@ The following table provides the 15 unique instructions, their types, and their 
 | SLT              | R-Type     | `0000000 00010 00011 010 00100 0110011` | Sets x4 to 1 if x2 < x3.                         |
 
 </details>
----
 
 
 
