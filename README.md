@@ -130,9 +130,9 @@ In Task 3 of the RISC-V Internship program, the focus was on understanding and d
 ---
 Here are the screenshots for the RISC-V Instruction Decoding:
 
-![RISC-V Instruction Decoding](./TASK-3/skipe-sim-1.png)
-![RISC-V Instruction Decoding](./TASK-3/skipe-sim-1.png) 
-![RISC-V Instruction Decoding](./TASK-3/skipe-sim-1.png) 
+![RISC-V Instruction Decoding](./TASK-3/image1.png)
+![RISC-V Instruction Decoding](./TASK-3/image2.png) 
+![RISC-V Instruction Decoding](./TASK-3/image3.png) 
  
  ---
 
