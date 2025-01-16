@@ -45,8 +45,8 @@ Here are the screenshots for the SKIPE Simulation:
 </details>
 
 # Task 3
-
-## RISC-V Instruction Decoding
+<details>
+ <summary> RISC-V Instruction Decoding</summary>
 
 Task 3 for the RISC-V Internship program, focusing on decoding RISC-V instructions. The task includes analyzing `riscv-objdump` output, identifying 15 unique instructions, and documenting their 32-bit binary instruction formats based on their respective types (R, I, S, B, U, and J).
 
@@ -121,6 +121,7 @@ The following table provides the 15 unique instructions, their types, and their 
 | XOR              | R-Type     | `0000000 00010 00011 100 00100 0110011` | Logical XOR of x2 and x3, result in x4.          |
 | SLT              | R-Type     | `0000000 00010 00011 010 00100 0110011` | Sets x4 to 1 if x2 < x3.                         |
 
+</details>
 ---
 
 
