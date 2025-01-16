@@ -73,4 +73,54 @@ This repository contains the completed Task 3 for the RISC-V Internship program,
 
 ### 1. R-Type Format
 R-type instructions perform operations between registers.
+Example: `ADD` (x1 = x2 + x3)
+
+### 2. I-Type Format
+I-type instructions involve immediate values.
+Example: `LW` (x4 = MEM[x5 + imm])
+
+### 3. S-Type Format
+S-type instructions are used for memory store operations.
+Example: `SW` (MEM[x5 + imm] = x4)
+
+### 4. B-Type Format
+B-type instructions perform conditional branches.
+Example: `BEQ` (if x6 == x7, branch to offset)
+
+### 5. U-Type Format
+U-type instructions load or modify upper immediate values.
+Example: `LUI` (x1 = imm << 12)
+
+### 6. J-Type Format
+J-type instructions are used for jumps.
+Example: `JAL` (x1 = PC + 4, PC = PC + offset)
+
+---
+
+## Instruction Decoding Table
+
+The following table provides the 15 unique instructions, their types, and their 32-bit binary representations:
+
+| **Instruction** | **Type**   | **Binary Pattern**               | **Explanation**                                   |
+|------------------|------------|-----------------------------------|---------------------------------------------------|
+| ADD              | R-Type     | `0000000 00010 00011 000 00100 0110011` | Adds values in registers x2 and x3, stores in x4. |
+| SUB              | R-Type     | `0100000 00010 00011 000 00100 0110011` | Subtracts x3 from x2, stores in x4.              |
+| LW               | I-Type     | `0000000 00010 00100 010 00001 0000011` | Loads a word from memory address into x1.         |
+| SW               | S-Type     | `0000000 00101 00100 010 00001 0100011` | Stores word from x1 to memory at x5 + offset.    |
+| BEQ              | B-Type     | `0000000 00110 00111 000 01000 1100011` | Branches if x6 equals x7.                        |
+| BNE              | B-Type     | `0000000 00110 00111 001 01000 1100011` | Branches if x6 does not equal x7.               |
+| JAL              | J-Type     | `0000000 00000 00101 000 00010 1101111` | Jumps to label, stores return address in x5.     |
+| JALR             | I-Type     | `0000000 00001 00100 000 00000 1100111` | Jumps to address in x4 + imm, stores PC+4 in x1. |
+| LUI              | U-Type     | `0000000 00000 00100 000 00000 0110111` | Loads upper immediate value to x4.              |
+| AUIPC            | U-Type     | `0000000 00000 00100 000 00000 0010111` | Adds upper immediate value to PC, stores in x4. |
+| NOP              | I-Type     | `0000000 00000 00000 000 00000 0000001` | No operation.                                    |
+| AND              | R-Type     | `0000000 00010 00011 111 00100 0110011` | Logical AND of x2 and x3, result in x4.          |
+| OR               | R-Type     | `0000000 00010 00011 110 00100 0110011` | Logical OR of x2 and x3, result in x4.           |
+| XOR              | R-Type     | `0000000 00010 00011 100 00100 0110011` | Logical XOR of x2 and x3, result in x4.          |
+| SLT              | R-Type     | `0000000 00010 00011 010 00100 0110011` | Sets x4 to 1 if x2 < x3.                         |
+
+---
+
+
+
 
