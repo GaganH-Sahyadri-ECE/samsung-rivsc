@@ -44,3 +44,33 @@ Here are the screenshots for the SKIPE Simulation:
 
 </details>
 
+# Task 3: RISC-V Instruction Decoding
+
+This repository contains the completed Task 3 for the RISC-V Internship program, focusing on decoding RISC-V instructions. The task includes analyzing `riscv-objdump` output, identifying 15 unique instructions, and documenting their 32-bit binary instruction formats based on their respective types (R, I, S, B, U, and J).
+
+---
+
+## Task Objectives
+
+1. **Understand RISC-V Instruction Types**  
+   Review the RISC-V software documentation to study the following instruction formats:
+   - **R-Type:** Register-register operations (e.g., ADD, SUB).
+   - **I-Type:** Immediate operations (e.g., LW, JALR).
+   - **S-Type:** Store instructions (e.g., SW).
+   - **B-Type:** Branch instructions (e.g., BEQ, BNE).
+   - **U-Type:** Upper immediate operations (e.g., LUI, AUIPC).
+   - **J-Type:** Jump instructions (e.g., JAL).
+
+2. **Identify Unique Instructions**  
+   From the `riscv-objdump` output of application code, identify **15 unique instructions**.
+
+3. **Decode Instructions**  
+   For each of the identified instructions, determine the **32-bit binary instruction code** in their specific format.
+
+---
+
+## RISC-V Instruction Types
+
+### 1. R-Type Format
+R-type instructions perform operations between registers.
+
