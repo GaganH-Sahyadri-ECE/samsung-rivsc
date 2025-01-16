@@ -160,8 +160,6 @@ Here are the screenshots for the RISC-V Instruction Decoding:
    - Use the RISC-V manual to decode instructions from the dump.
 
 ---
-
-
 </details>
 
 
