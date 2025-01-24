@@ -170,9 +170,13 @@ Here are the screenshots for the RISC-V Instruction Decoding:
 # Task 4
 <details>
  <summary> Functional Simulation of RISC-V Core</summary>
-This project involves performing a functional simulation of a RISC-V core using a provided Verilog netlist and testbench. The task was completed as part of the RISC-V Internship Program.
  
-### Steps for Task 4
+This project involves performing a functional simulation of a RISC-V core using a provided Verilog netlist and testbench. The task was completed as part of the RISC-V Internship Program.
+
+### Objective
+Simulate the RISC-V core using the provided Verilog netlist and testbench to verify its functionality. The simulation results are captured and visualized using waveform snapshots.
+ 
+### Steps
 
 1. **Set Up the Environment**  
    - Clone the repository containing the Verilog netlist and testbench for the RISC-V Core:
