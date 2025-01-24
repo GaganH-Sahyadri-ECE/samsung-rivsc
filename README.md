@@ -203,9 +203,10 @@ This repository contains the necessary files and instructions to simulate a RISC
  Create a directory for organizing your simulation files:
 
   ```bash
-  mkdir RISC-V_Simulation
+  mkdir -/riscv_simulation
   ```
  Place netlist.v and testbench.v into this directory.
+ 
 
 ### 3. Load Verilog Files into the Simulator
 Compile the Verilog netlist and testbench using iverilog:
