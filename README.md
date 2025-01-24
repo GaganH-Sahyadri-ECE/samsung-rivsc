@@ -190,17 +190,16 @@ This repository contains the necessary files and instructions to simulate a RISC
 ### 2. Set Up Simulation Environment
 
 #### Install Required Tools
-Make sure the following tools are installed:
-
+ Make sure the following tools are installed:
 - **iverilog** for compiling Verilog code:
   ```bash
   sudo apt-get install iverilog
   ```
--**gtkwave** for waveform visualization:
+- **gtkwave** for waveform visualization:
  ```bash
 sudo apt-get install gtkwave
  ```
--**Prepare** Simulation Files
+- **Prepare** Simulation Files
 Create a directory for organizing your simulation files:
 
  ```bash
