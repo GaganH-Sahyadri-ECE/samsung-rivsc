@@ -170,70 +170,8 @@ Here are the screenshots for the RISC-V Instruction Decoding:
 # Task 4
 <details>
  <summary> Functional Simulation of RISC-V Core</summary>
-
-# Steps to Perform Functional Simulation of RISC-V Core
-
-## Step 1: Create a New Directory
-
-1. Open your terminal.
-2. Create a directory with your name by entering the following command:
-   ```bash
-   mkdir <your_name>
-   ```
-
-## Step 2: Create Verilog and Testbench Files
-
-1. Navigate to the newly created directory:
-   ```bash
-   cd <your_name>
-   ```
-2. Create two files using the `touch` command:
-   ```bash
-   touch <your_name>_rv32i.v <your_name>_rv32i_tb.v
-   ```
-
-## Step 3: Add Code to the Files
-
-1. Open the files `<your_name>_rv32i.v` and `<your_name>_rv32i_tb.v` in a text editor of your choice (e.g., `nano`, `vim`, or a GUI-based editor).
-2. Copy the reference code from the provided GitHub repository.
-3. Paste the code into the respective files and save them.
-
-## Step 4: Run and Simulate the Verilog Code
-
-1. Use the `iverilog` tool to compile the Verilog files:
-   ```bash
-   iverilog -o <your_name>_rv32i <your_name>_rv32i.v <your_name>_rv32i_tb.v
-   ```
-2. Execute the compiled file:
-   ```bash
-   ./<your_name>_rv32i
-   ```
-
-## Step 5: View the Simulation Waveform
-
-1. Open GTKWave to view the simulation waveform:
-   ```bash
-   gtkwave <your_name>_rv32i.vcd
-   ```
-2. The GTKWave interface will appear, allowing you to analyze the waveform results.
-
----
-
-## Task 4: Functional Simulation of RISC-V Core
-
-### Task Objectives
-
-1. **Understand the Simulation Environment**  
-   Familiarize yourself with the functional simulation setup for the RISC-V Core.
-
-2. **Perform Simulation**  
-   Execute functional simulations of the RISC-V Core using the Verilog netlist and testbench provided.
-
-3. **Capture and Analyze Waveforms**  
-   Use GTKWave to visualize and analyze the simulation results.
-
----
-
+This project involves performing a functional simulation of a RISC-V core using a provided Verilog netlist and testbench. The task was completed as part of the RISC-V Internship Program.
+ 
 ### Steps for Task 4
 
 1. **Set Up the Environment**  
