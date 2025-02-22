@@ -270,7 +270,7 @@ This project involves the implementation of an 8:1 multiplexer circuit using the
 - **Output**: One LED is connected to display the selected output.
 - **Wiring**: The GPIO pins are configured as per the reference manual to ensure proper signal flow between components.
 
-![Functional Simulation of RISC-V Core](./TASK-4/image5.png) 
+![To implement any digital circuit using VSDSquadron Mini and check whether building and uploading of C program file on RISCV processor works.](./TASK-5/image1.png) 
 
 ## Working and Block Diagram
 ### Physical Circuit:
