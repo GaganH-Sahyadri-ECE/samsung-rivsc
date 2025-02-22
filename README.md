@@ -292,55 +292,6 @@ This project involves the implementation of an 8:1 multiplexer circuit using the
   
 
 
-
-
-  # 8:1 Multiplexer using VSD Squadron Mini
-
-## Overview
-This project involves the implementation of an 8:1 multiplexer circuit using the **VSD Squadron Mini**, a RISC-V-based SoC development kit. A multiplexer is a fundamental digital circuit that selects one of the multiple input signals and forwards it to a single output line. This project showcases the practical application of digital logic and RISC-V architecture by implementing a multiplexer function. 
-
-### Key Features:
-- Reads 8 input signals through GPIO pins (push buttons)
-- Implements an 8:1 multiplexer logic in software
-- Simulates the design using PlatformIO IDE
-- Displays the selected output using an LED
-- Provides hands-on experience with digital signal control using a microcontroller
-- Demonstrates the use of RISC-V for custom hardware acceleration
-
-## Components Required
-- **VSD Squadron Mini**
-- **Push buttons** (for 8 data inputs and 3 selection inputs)
-- **1 LED** (to display the output)
-- **Breadboard**
-- **Jumper wires**
-- **VS Code** (for software development)
-- **PlatformIO** (multi-framework professional IDE)
-
-## Hardware Connections
-- **Inputs**: Eleven push-button inputs are connected to the GPIO Pins of **VSD Squadron Mini** (8 for data inputs, 3 for selection lines).
-- **Output**: One LED is connected to display the selected output.
-- **Wiring**: The GPIO pins are configured as per the reference manual to ensure proper signal flow between components.
-
-## Working and Block Diagram
-### Physical Circuit:
-- Push buttons are used to input 8 different data signals and 3 selection bits.
-- The selection inputs determine which of the 8 inputs is routed to the single output LED.
-- The circuit reads the selection bits and activates the corresponding input signal.
-
-### Selection and Data Flow (Using Logic Gates):
-1. **Selection Logic** (Using AND & OR Gates):
-   - The 3-bit selection input determines which of the 8 input signals is forwarded to the output.
-   - Each input is ANDed with the corresponding selection logic to activate only one path at a time.
-   - Example: If selection bits are `011`, the 4th input signal is activated and passed to the output.
-
-2. **Data Path Management**:
-   - The inputs are structured in a way that only the selected signal reaches the final output.
-   - The use of logic gates ensures proper control over the input data flow.
-   
-3. **Final Output (Multiplexer Functionality)**:
-   - The final output LED represents the value of the selected input.
-   - Changing the selection bits dynamically switches the active input being displayed.
-
 ## Truth Table for 8:1 Multiplexer
 | S2 | S1 | S0 | Input Selected | Output |
 |----|----|----|---------------|--------|
@@ -354,7 +305,7 @@ This project involves the implementation of an 8:1 multiplexer circuit using the
 |  1 |  1 |  1 | I7            | I7     |
 
 ## Program
-{
+
 #include <stdio.h>
 #include <debug.h>
 #include <ch32v00x.h>
@@ -438,7 +389,7 @@ int main()
     }
 }
 
-}
+
   
      
 
