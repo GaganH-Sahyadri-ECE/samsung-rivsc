@@ -270,6 +270,8 @@ This project involves the implementation of an 8:1 multiplexer circuit using the
 - **Output**: One LED is connected to display the selected output.
 - **Wiring**: The GPIO pins are configured as per the reference manual to ensure proper signal flow between components.
 
+![Functional Simulation of RISC-V Core](./TASK-4/image5.png) 
+
 ## Working and Block Diagram
 ### Physical Circuit:
 - Push buttons are used to input 8 different data signals and 3 selection bits.
@@ -305,7 +307,7 @@ This project involves the implementation of an 8:1 multiplexer circuit using the
 |  1 |  1 |  1 | I7            | I7     |
 
 ## Program
-
+```
 #include <stdio.h>
 #include <debug.h>
 #include <ch32v00x.h>
@@ -388,7 +390,7 @@ int main()
         Delay_Ms(100);
     }
 }
-
+```
 
   
      
