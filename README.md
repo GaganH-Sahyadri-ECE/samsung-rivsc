@@ -238,7 +238,8 @@ Here are the screenshots for the Functional Simulation of RISC-V Core:
 
 ---
 </details>
-# Task 4
+
+# Task 5
 <details>
  <summary> Functional Simulation of RISC-V Core</summary>
  
