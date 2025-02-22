@@ -243,79 +243,55 @@ Here are the screenshots for the Functional Simulation of RISC-V Core:
 <details>
  <summary> To implement any digital circuit using VSDSquadron Mini and check whether building and uploading of C program file on RISCV processor works.</summary>
  
-# 4x4 Binary Multiplier using VSD Squadron Mini
+# 8:1 Multiplexer using VSD Squadron Mini
 
 ## Overview
-This project implements a 4x4 binary multiplier circuit using the **VSD Squadron Mini**, a RISC-V-based SoC development kit. A binary multiplier is a fundamental digital circuit that performs binary multiplication of two numbers. This project demonstrates the practical application of digital logic and RISC-V architecture by implementing a multiplication function. 
+This project involves the implementation of an 8:1 multiplexer circuit using the **VSD Squadron Mini**. A multiplexer is a fundamental digital circuit that selects one of the multiple input signals and forwards it to a single output line. This project showcases the practical application of digital logic and RISC-V architecture by implementing a multiplexer function. 
 
 ### Key Features:
-- Reads two 4-bit binary numbers through GPIO pins (push buttons)
-- Implements a 4x4 multiplier logic in software
+- Reads 8 input signals through GPIO pins (push buttons)
+- Implements an 8:1 multiplexer logic in software
 - Simulates the design using PlatformIO IDE
-- Displays the 8-bit output using LEDs
+- Displays the selected output using an LED
 - Provides hands-on experience with digital signal control using a microcontroller
 - Demonstrates the use of RISC-V for custom hardware acceleration
 
 ## Components Required
 - **VSD Squadron Mini**
-- **Push buttons** (for A input, B input, and Reset)
-- **8 LEDs** (to display the output)
+- **Push buttons** (3 selection inputs)
+- **8 LED** (to display the output)
 - **Breadboard**
 - **Jumper wires**
 - **VS Code** (for software development)
 - **PlatformIO** (multi-framework professional IDE)
 
 ## Hardware Connections
-- **Inputs**: Three push-button inputs are connected to the GPIO Pins of **VSD Squadron Mini**.
-- **Outputs**: Eight LEDs are connected to GPIO pins to display the 8-bit multiplication result.
+- **Inputs**: Eleven push-button inputs are connected to the GPIO Pins of **VSD Squadron Mini** (8 for data inputs, 3 for selection lines).
+- **Output**: One LED is connected to display the selected output.
 - **Wiring**: The GPIO pins are configured as per the reference manual to ensure proper signal flow between components.
 
+## Working and Block Diagram
+### Physical Circuit:
+- Push buttons are used to input 8 different data signals and 3 selection bits.
+- The selection inputs determine which of the 8 inputs is routed to the single output LED.
+- The circuit reads the selection bits and activates the corresponding input signal.
 
+### Selection and Data Flow (Using Logic Gates):
+1. **Selection Logic** (Using AND & OR Gates):
+   - The 3-bit selection input determines which of the 8 input signals is forwarded to the output.
+   - Each input is ANDed with the corresponding selection logic to activate only one path at a time.
+   - Example: If selection bits are `011`, the 4th input signal is activated and passed to the output.
 
+2. **Data Path Management**:
+   - The inputs are structured in a way that only the selected signal reaches the final output.
+   - The use of logic gates ensures proper control over the input data flow.
+   
+3. **Final Output (Multiplexer Functionality)**:
+   - The final output LED represents the value of the selected input.
+   - Changing the selection bits dynamically switches the active input being displayed.
+  
+     
 
-### Objective
-Simulate the RISC-V core using the provided Verilog netlist and testbench to verify its functionality. The simulation results are captured and visualized using waveform snapshots.
- 
-### Steps
-# RISC-V Core Functional Simulation
-
-This repository contains the necessary files and instructions to simulate a RISC-V core using Verilog. The simulation setup includes the RISC-V hardware description (netlist) and a testbench file for input stimuli.
-
-## Steps to Run the Simulation
-
-### 1. Download Files
-- **Verilog Netlist**: The hardware description file for the RISC-V core (`netlist.v`).
-- **Testbench**: The file (`testbench.v`) provides input stimuli and expected outputs for the simulation.
-
-### 2. Set Up Simulation Environment
-
-#### Install Required Tools
- Make sure the following tools are installed:
-- **iverilog** for compiling Verilog code:
-  ```bash
-  sudo apt-get install iverilog
-  ```
-- **gtkwave** for waveform visualization:
-  ```bash
-  sudo apt-get install gtkwave
-  ```
-- **Prepare** Simulation Files
- Create a directory for organizing your simulation files:
-
-  ```bash
-  mkdir -/riscv_simulation
-  ```
- Place netlist.v and testbench.v into this directory.
- 
-
-### 3. Load Verilog Files into the Simulator
-Compile the Verilog netlist and testbench using iverilog:
-
-  ```bash
-  iverilog -o risc_v_simulation.vvp netlist.v testbench.v
-  ```
-T
----
 </details>
 
 
